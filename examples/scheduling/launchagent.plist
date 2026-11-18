@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.example.index-alpha-workflows</string>
+  <key>LimitLoadToSessionType</key><string>Aqua</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/absolute/path/to/index-alpha/examples/scheduling/run.sh</string>
+    <string>/absolute/path/to/index-alpha/examples/.operations/scheduled-prompt.md</string>
+  </array>
+  <key>WorkingDirectory</key><string>/absolute/path/to/index-alpha</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/absolute/path/to/node-bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>CODEX_BIN</key><string>/absolute/path/to/node-bin/codex</string>
+  </dict>
+  <key>StandardOutPath</key><string>/absolute/path/to/index-alpha/examples/.state/scheduled-runs/launchagent.log</string>
+  <key>StandardErrorPath</key><string>/absolute/path/to/index-alpha/examples/.state/scheduled-runs/launchagent-stderr.log</string>
+</dict>
+</plist>

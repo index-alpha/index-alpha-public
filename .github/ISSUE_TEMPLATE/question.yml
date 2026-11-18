@@ -1,0 +1,15 @@
+name: Question or documentation help
+description: Ask about setup, behavior, or an example.
+labels: ["type:question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and intended outcome
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Include the guide, client/version, and sanitized error if relevant.

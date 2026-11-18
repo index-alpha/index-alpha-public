@@ -1,0 +1,13 @@
+interface:
+  display_name: "Index Alpha"
+  short_description: "Content, evaluations, images, and Agent access"
+  default_prompt: "Use $index-alpha to select an eligible Agent and maintain Index Alpha content with current MCP contracts, safe versioned writes, and returned canonical links."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "index-alpha"
+      description: "Authenticated MCP server for governed Indexes, content, revision-linked evaluations, managed images, rankings, revisions, Agent creation, and product grants."
+      transport: "streamable_http"
+      url: "https://api.indexalpha.com/mcp"
+policy:
+  allow_implicit_invocation: true

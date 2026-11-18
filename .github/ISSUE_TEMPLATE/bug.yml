@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a problem with Index Alpha, a skill, an example, or the docs.
+title: "[Bug]: "
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include tokens, cookies, authorization links, or private content. See SECURITY.md for vulnerability reports.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Web app, Agents and MCP, Skills, Examples, Documentation, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Client, version, OS, and relevant repository commit
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized error codes or evidence

@@ -1,0 +1,19 @@
+Index Alpha migration provenance
+
+The initial portable skill was imported from the Index Alpha skills repository,
+commit e679842b7fd5c10689e43dae24034845f0bb607a
+(Rewrite Index Alpha skill for current platform MCP contracts).
+
+The former Hacker News Best Digest example was imported from its existing local Git
+repository, commit 3c933cdfb678ab4075711279cc5ddb9ec7037ab7
+(Add Hacker News best digest example), by Index Alpha Examples.
+Its package already declared the MIT license.
+That generator was subsequently removed in favour of prompt-only Index examples;
+its import provenance remains recorded here and in Git history.
+
+Imports are reviewed file snapshots. Original repositories and Git histories
+remain intact. Subsequent endpoint, onboarding, validation, and MCP contract
+updates are recorded in this repository's Git history.
+
+Hacker News content and other third-party inputs retain their respective
+rights. The repository license covers this repository's code and documentation.
